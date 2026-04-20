@@ -25,8 +25,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
     private final OrderService  orderService;
-    private final ProductRepository productRepository;
-    private final OrderRepository orderRepository;
 
     @PostMapping
     public ResponseEntity<OrderResponse> createOrder(@Valid @RequestBody OrderRequest request) {
